@@ -1,0 +1,38 @@
+{
+    "-MiBJumPHigH234": {
+        "definition": "an interpreted, object-oriented, high-level programming language with dynamic semantics",
+        "favorite": true,
+        "firebaseKey": "-MiBt86VzkC-EGmJnxjm",
+        "language_tech": "python",
+        "time": "10:00",
+        "title": "Python Programming",
+        "uid": ""
+    },
+    "-MiBPedALsloW543": {
+        "definition": "a framework for project management that emphasizes teamwork, accountability and iterative progress toward a well-defined goal.",
+        "favorite": true,
+        "firebaseKey": "-MiBt86VzkC-EGmJnxjm",
+        "language_tech": "tech",
+        "time": "10:00",
+        "title": "Scrum",
+        "uid": ""
+    },
+    "-MiBRunFast123": {
+        "definition": "an iterative approach to project management and software development that helps teams deliver value to their customers faster and with fewer headaches",
+        "favorite": true,
+        "firebaseKey": "-MiBsfuTafbEQ7eAULxV",
+        "language_tech": "Tech",
+        "time": "10:00",
+        "title": "Agile",
+        "uid": "rYAJH5zCxwgJF9c4jjCZlJPBYWh1"
+    },
+    "-MiBRunSloW456": {
+        "definition": "In programming, asynchronous operation means that a process operates independently of other processes, whereas synchronous operation means that the process runsonly as a result of some other process being completed or handed off.",
+        "favorite": true,
+        "firebaseKey": "-MiBt86VzkC-EGmJnxjm",
+        "language_tech": "Tech",
+        "time": "10:00",
+        "title": "Asynchronous Programming",
+        "uid": ""
+    }
+}
