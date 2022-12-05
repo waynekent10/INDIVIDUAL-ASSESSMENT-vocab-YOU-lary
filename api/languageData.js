@@ -1,9 +1,7 @@
 import client from '../utils/client';
-import client from '../utils/client';
 
 const endpoint = client.databaseURL;
 
-// GET ALL AUTHORS
 const getLanguage = () => new Promise((resolve, reject) => {
   fetch(`${endpoint}/language.json`, {
     method: 'GET',
@@ -11,15 +9,15 @@ const getLanguage = () => new Promise((resolve, reject) => {
       'Content-Type': 'application/json',
     },
   })
-  .then((response) => response.json())
-  .then((data) => {
-    if (data) {
-      resolve(Object.values(data));
-    } else {
-      resolve([]);
-    }
-  })
-  .catch(reject);
+    .then((response) => response.json())
+    .then((data) => {
+      if (data) {
+        resolve(Object.values(data));
+      } else {
+        resolve([]);
+      }
+    })
+    .catch(reject);
 });
 
 // FIXME: CREATE AUTHOR
@@ -75,7 +73,6 @@ const updateLanguage = (payload) => new Promise((resolve, reject) => {
     .then(resolve)
     .catch(reject);
 });
-
 
 export {
   getLanguage,

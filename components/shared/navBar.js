@@ -1,6 +1,5 @@
 import renderToDOM from '../../utils/renderToDOM';
 
-
 const navBar = () => {
   const domString = `
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark mb-5">
@@ -17,7 +16,7 @@ const navBar = () => {
               </a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#" id="add-word-btn">Add Word/a>
+              <a class="nav-link" href="#" id="add-word-btn">Add Word</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#" id="sort-btn">Sort words</a>
@@ -26,12 +25,6 @@ const navBar = () => {
             <a class="nav-link" href="#" id=""></a>
           </li>
             <li>
-            <input
-              class="form-control mr-sm-2"
-              id="search"
-              placeholder="Search Book Titles"
-              aria-label="Search"
-            />
             </li>
           </ul>
           <span class="navbar-text">

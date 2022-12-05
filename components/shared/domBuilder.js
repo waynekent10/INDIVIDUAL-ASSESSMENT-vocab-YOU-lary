@@ -9,7 +9,7 @@ const domBuilder = () => {
       <div id="store"></div>
       <div id="view"></div>
     </div>`;
-  
-    renderToDOM('#app', domString);
-  };
+
+  renderToDOM('#app', domString);
+};
 export default domBuilder;
