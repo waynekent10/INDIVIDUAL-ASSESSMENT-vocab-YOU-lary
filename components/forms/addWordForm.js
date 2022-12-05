@@ -1,10 +1,9 @@
 import clearDom from '../../utils/clearDom';
 import renderToDom from '../../utils/renderToDOM';
 
-
-const wordLookUpForm = (obj = {}, user) => {
-    clearDom();
-    const domString = `
+const addWordForm = (obj = {}) => {
+  clearDom();
+  const domString = `
       <form id="${obj.firebaseKey ? `update-entry--${obj.firebaseKey}` : 'submit-entry'}" class="mb-4">
         <div class="form-group">
           <label for="title">Title</label>
@@ -18,12 +17,11 @@ const wordLookUpForm = (obj = {}, user) => {
         </div>
         <div class="form-check">
           <input type="checkbox" class="form-check-input" id="sale" ${obj.favorite ? 'checked' : ''}>
-          <label class="form-check-label" for="sale">On Sale?</label>
+          <label class="form-check-label" for="favorite">?</label>
         </div>
-        <button type="submit" class="btn btn-primary">Submit Book
+        <button type="submit" class="btn btn-primary">Submit Entry
         </button>
       </form>`;
-}
-renderToDom('#form-container', domString);
-
-export default wordLookUpForm;
+  renderToDom('#form-container', domString);
+};
+export default addWordForm;

@@ -36,7 +36,7 @@ const deleteWord = (firebaseKey) => new Promise((resolve, reject) => {
 
 // TODO: GET SINGLE BOOK
 const getSingleWord = (firebaseKey) => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/books/${firebaseKey}.json`, {
+  fetch(`${endpoint}/vocab/${firebaseKey}.json`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -49,7 +49,7 @@ const getSingleWord = (firebaseKey) => new Promise((resolve, reject) => {
 
 // TODO: CREATE BOOK
 const createWord = (payload) => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/books.json`, {
+  fetch(`${endpoint}/vocab.json`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -63,7 +63,7 @@ const createWord = (payload) => new Promise((resolve, reject) => {
 
 // TODO: UPDATE BOOK
 const updateWord = (payload) => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/books/${payload.firebaseKey}.json`, {
+  fetch(`${endpoint}/vocab/${payload.firebaseKey}.json`, {
     method: 'PATCH',
     headers: {
       'Content-Type': 'application/json',
@@ -74,7 +74,6 @@ const updateWord = (payload) => new Promise((resolve, reject) => {
     .then(resolve)
     .catch(reject);
 });
-
 
 export {
   getWords,
